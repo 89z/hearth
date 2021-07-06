@@ -3,7 +3,7 @@
 ## .gitconfig
 
 ~~~
-C:\msys64\home\Steven\.gitconfig
+C:\sienna\msys2\home\Steven\.gitconfig
 ~~~
 
 ## .netrc

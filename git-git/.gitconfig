@@ -1,6 +1,3 @@
-[blame]
-coloring = highlightRecent
-
 [color "diff"]
 meta = yellow bold
 
