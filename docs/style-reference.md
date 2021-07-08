@@ -1,64 +1,6 @@
 # Style reference
 
-~~~html
-<style>
-.container {
-   background: green;
-   display: flex;
-   flex-wrap: wrap;
-   gap: 10px;
-   justify-content: center;
-   margin: 10px auto;
-   max-width: 700px; /* fix */
-}
-.item {
-   background: red;
-   height: 100px;
-   width: 200px;
-}
-</style>
-<div class="container">
-   <div class="item"></div>
-   <div class="item"></div>
-</div>
-<div class="container">
-   <div class="item"></div>
-   <div class="item"></div>
-   <div class="item"></div>
-   <div class="item"></div>
-</div>
-~~~
-
-~~~html
-<style>
-.container {
-   background: green;
-   display: grid;
-   gap: 10px;
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   justify-items: center;
-   margin: 10px auto;
-   max-width: 800px; /* fix */
-}
-.item {
-   background: red;
-   height: 100px;
-   width: 100px;
-}
-</style>
-<div class="container">
-   <div class="item"></div>
-   <div class="item"></div>
-</div>
-<div class="container">
-   <div class="item"></div>
-   <div class="item"></div>
-   <div class="item"></div>
-   <div class="item"></div>
-</div>
-~~~
-
-**Color**:
+## Color
 
 - <https://color.adobe.com>
 - <https://colorhunt.co>
@@ -66,7 +8,38 @@
 - <https://tachyons.io>
 - <https://tailwindcss.com/docs/customizing-colors>
 
-**Data types**:
+## Data types
 
 Avoid `ex` as it produces inconsistent results on mobile browsers. Use `em`
 instead.
+
+## link
+
+~~~html
+<link rel="icon" href="/repo/favicon.png">
+~~~
+
+Note that SVG favicons are not supported with mobile browser. Alternative is
+PNG.
+
+- <https://flaticon.com>
+- <https://gauger.io/fonticon>
+- <https://ikonate.com>
+- <https://materialdesignicons.com>
+
+~~~html
+<link rel="stylesheet" href="style.css">
+~~~
+
+## meta
+
+~~~html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+~~~
+
+`initial-scale` is needed for Chrome Android.
+
+## References
+
+- <https://validator.w3.org>
+- <https://w3.org/tr/html5/syntax#optional-tags>
