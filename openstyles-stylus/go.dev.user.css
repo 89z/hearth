@@ -1,0 +1,14 @@
+/* ==userstyle==
+@version 1.0.0
+@namespace Steven Penny
+@name go.dev
+==/userstyle== */
+@-moz-document domain("go.dev") {
+   .go-Main-navDesktop {
+      display: block;
+   }
+   .go-Main {
+      grid-template-areas: 'header header' 'aside aside' 'nav article' ;
+      grid-template-columns: 1fr 4fr;
+   }
+}
