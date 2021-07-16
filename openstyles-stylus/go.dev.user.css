@@ -7,6 +7,9 @@
    .go-Main-navDesktop {
       display: block;
    }
+   .go-Main-navMobile {
+      display: none;
+   }
    .go-Main {
       grid-template-areas: 'header header' 'aside aside' 'nav article' ;
       grid-template-columns: 1fr 4fr;
